@@ -14,4 +14,17 @@ public class Sort {
             n--;
         }
     }
+	public void sortInt(int[] names) {
+        int n = names.length;
+        while (n > 1) {
+            for (int i = 0; i < n - 1; i++) {
+                if (names[i] > (names[i + 1]) ) {
+                    final int tmp = names[i + 1];
+                    names[i + 1] = names[i];
+                    names[i] = tmp;
+                }
+            }
+            n--;
+        }
+    }
 }
